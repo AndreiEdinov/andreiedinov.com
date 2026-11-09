@@ -769,7 +769,8 @@ window.__dump=function(){const out=[];const layerOf=o=>{while(o&&o.parent){for(c
          es:{iso:'Isométrica',front:'Frente',left:'Izquierda',back:'Detrás',right:'Derecha',top:'Arriba',isoBack:'Detrás-derecha',hint:'Arrastre para girar, botón derecho para desplazar, rueda para zoom'}}[lang];
   document.documentElement.lang=lang;
   if(T){document.querySelectorAll('#views button').forEach(function(b){b.textContent=T[b.dataset.view]||b.textContent;});
-    document.getElementById('hint').textContent=T.hint; var tip=document.getElementById('tip'); if(tip)tip.style.display='none';}
+    document.getElementById('hint').textContent=T.hint;
+    var st=document.createElement('style'); st.textContent='#tip{display:none!important}'; document.head.appendChild(st);}  // подсказки с описанием деталей есть только на русском — в EN/ES не показываем
   var DROP=["PIT301", "PIT302", "W07", "W08"], s=window.__uvScene;
   if(s){var rm=[];s.scene.traverse(function(o){if(DROP.indexOf(o.userData&&o.userData.tag)>=0)rm.push(o);});rm.forEach(function(o){if(o.parent)o.parent.remove(o);});}
   ['zone','dim'].forEach(function(k){var i=document.querySelector('input[data-layer="'+k+'"],input[data-label="'+k+'"]');if(i&&i.checked)i.click();});
