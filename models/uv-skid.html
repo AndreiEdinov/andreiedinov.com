@@ -766,7 +766,7 @@ window.__dump=function(){const out=[];const layerOf=o=>{while(o&&o.parent){for(c
 (function(){
   var lang=(new URLSearchParams(location.search).get('lang')||'ru');
   var T={en:{iso:'Isometric',front:'Front',left:'Left',back:'Back',right:'Right',top:'Top',isoBack:'Rear right',hint:'Drag to rotate, right-drag to pan, scroll to zoom'},
-         es:{iso:'Isométrica',front:'Frente',left:'Izquierda',back:'Detrás',right:'Derecha',top:'Arriba',isoBack:'Detrás-derecha',hint:'Arrastre para girar, botón derecho para desplazar, rueda para zoom'}}[lang];
+         es:{iso:'Isométrica',front:'Frontal',left:'Izquierda',back:'Posterior',right:'Derecha',top:'Superior',isoBack:'Posterior derecha',hint:'Arrastre para girar, botón derecho para desplazar, rueda para acercar o alejar'}}[lang];
   document.documentElement.lang=lang;
   if(T){document.querySelectorAll('#views button').forEach(function(b){b.textContent=T[b.dataset.view]||b.textContent;});
     document.getElementById('hint').textContent=T.hint;
