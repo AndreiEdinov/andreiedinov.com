@@ -8,7 +8,7 @@
 <table class="case-table">
 <thead><tr><th>Item</th><th>What the documentation says</th><th>Where</th></tr></thead>
 <tbody>
-<tr><td>Vibration sensors</td><td>Two "Vibration Guard" units, on the liquid side and the solids side. Each measures vibration velocity in mm/s (true RMS, to DIN/ISO 10816) and sends a 4–20 mA signal. Range 0–50 mm/s, 10–1000 Hz, averaged over 3 s, along one axis only.</td><td>p. 1048–1051</td></tr>
+<tr><td>Vibration sensors</td><td>Two "Vibration Guard" units, on the liquid side and the solids side. Each measures vibration velocity in mm/s (true RMS, the root mean square: one overall level across all frequencies; to DIN/ISO 10816) and sends a 4–20 mA signal. Range 0–50 mm/s, 10–1000 Hz, averaged over 3 s, along one axis only.</td><td>p. 1048–1051</td></tr>
 <tr><td>Where the signal goes</td><td>Both sensors are wired to analogue inputs of a Siemens S7-300 PLC, scaled 4–20 mA = 0–50 mm/s. The operator works with a SIMATIC OP177B panel.</td><td>p. 645, 669, 673, 685</td></tr>
 <tr><td>Who decides</td><td>The sensor itself shuts nothing down. Limits are set in the control unit: at stage 1 a fault is displayed, at stage 2 the decanter is switched off.</td><td>p. 127, 1048</td></tr>
 <tr><td>Factory setpoints</td><td>Limit 1, warning: 18 mm/s. Limit 2, feed closed and drive off: 20 mm/s.</td><td>p. 743, 815</td></tr>
@@ -48,11 +48,11 @@
 <li>replaced bearings, seals, drive shaft, belts and the speed sensor, 27 items from the parts list</li>
 </ul>
 <p>After start-up the machine’s own vibration sensors read 6 to 7 mm/s, within GEA’s “good” band of up to 7. Photos of the strip-down are in the <a href="/portfolio/decanter-service/">repair case</a>.</p>
-<p>Deposits on the scroll and bearing wear are both in GEA’s table as causes of vibration, and we only found them once the machine was open. No model working on a single number from the sensor could have told them apart.</p>
+<p>We only saw the deposits on the scroll once the machine was open. A single overall number from the sensor can’t tell them apart from bearing wear: both causes push the same RMS value up.</p>
 <h2 id="what-vendors-call-predictive-maintenance">What vendors call predictive maintenance</h2>
 <p>GEA itself, in the documentation for this machine, offers its wewatch® condition monitoring system for predictive maintenance: continuous data collection on the machine’s key parameters and a condition-based maintenance schedule (p. 64). Today GEA’s website lists InsightPartner Separation Monitoring for separators and decanters. Two to three additional sensors are fitted to the machine. They measure vibration velocity and acceleration at different points and, as GEA puts it, only measure and do not switch the centrifuge off. Data goes to the GEA cloud or to the machine’s panel: trends, anomaly detection, diagnostics and remote support from GEA experts.</p>
 <p>ANDRITZ describes its VibePro sensor as combining vibration with process data, with spectrum (FFT) analysis and fault libraries. Spectrum analysis on its own is a classic vibration diagnostics method: it splits vibration by frequency and needs no machine learning. Alfa Laval sells ConditionAlert for decanters, where vibration data is analysed remotely and anomalies are reported under a service agreement.</p>
-<p>None of these pages says there is machine learning inside. All three vendors sell the same thing: more sensors, more than one number, data history and people who read it.</p>
+<p>None of these pages says there is machine learning inside. All three build on the same things: more sensors, more than one number, data history and people who read it.</p>
 <p>I haven’t used these systems on a decanter, so I can’t say how much they add over the standard protection. If one is offered for your plant, I’d ask the vendor plainly: which signals does it use beyond overall vibration, can it tell deposits from bearing damage before the machine is opened, and on how many comparable machines has that been shown.</p>
 <h2 id="before-buying-ai-check-your-machines-documentation">Before buying AI, check your machine’s documentation</h2>
 <ul>

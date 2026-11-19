@@ -8,7 +8,7 @@
 <table class="case-table">
 <thead><tr><th>Qué</th><th>Qué dice la documentación</th><th>Dónde</th></tr></thead>
 <tbody>
-<tr><td>Sensores de vibración</td><td>Dos «Vibration Guard», en el lado del líquido y en el lado de los sólidos. Cada uno mide la velocidad de vibración en mm/s (RMS verdadero, según DIN/ISO 10816) y envía una señal de 4–20 mA. Rango 0–50 mm/s, 10–1000 Hz, promedio de 3 s, en un solo eje.</td><td>p. 1048–1051</td></tr>
+<tr><td>Sensores de vibración</td><td>Dos «Vibration Guard», en el lado del líquido y en el lado de los sólidos. Cada uno mide la velocidad de vibración en mm/s (RMS verdadero, es decir, el valor cuadrático medio: un único nivel global para todas las frecuencias; según DIN/ISO 10816) y envía una señal de 4–20 mA. Rango 0–50 mm/s, 10–1000 Hz, promedio de 3 s, en un solo eje.</td><td>p. 1048–1051</td></tr>
 <tr><td>Adónde va la señal</td><td>Los dos sensores van a entradas analógicas de un PLC Siemens S7-300, con escala 4–20 mA = 0–50 mm/s. El operador trabaja con un panel SIMATIC OP177B.</td><td>p. 645, 669, 673, 685</td></tr>
 <tr><td>Quién decide</td><td>El sensor no apaga nada. Los límites se fijan en la unidad de control: en la etapa 1 se muestra un fallo, en la etapa 2 el decantador se desconecta.</td><td>p. 127, 1048</td></tr>
 <tr><td>Consignas de fábrica</td><td>Límite 1, aviso: 18 mm/s. Límite 2, alimentación cerrada y accionamiento apagado: 20 mm/s.</td><td>p. 743, 815</td></tr>
@@ -48,11 +48,11 @@
 <li>sustituimos rodamientos, juntas, eje de accionamiento, correas y el sensor de velocidad, 27 posiciones de la lista de repuestos</li>
 </ul>
 <p>Tras el arranque, los sensores de vibración de la máquina marcaron 6–7 mm/s, dentro de la banda «buena» de GEA, hasta 7. Las fotos del desmontaje están en el <a href="/es/portfolio/decanter-service/">caso de la reparación</a>.</p>
-<p>Los depósitos en el tornillo y el desgaste de rodamientos figuran en la tabla de GEA como causas de vibración, y solo los encontramos al abrir la máquina. Ningún modelo trabajando con un único número del sensor habría podido distinguirlos.</p>
+<p>Los depósitos en el tornillo solo los vimos al abrir la máquina. Con un único número global del sensor no se distinguen del desgaste de rodamientos: ambas causas suben el mismo valor RMS.</p>
 <h2 id="lo-que-los-fabricantes-llaman-mantenimiento-predictivo">Lo que los fabricantes llaman mantenimiento predictivo</h2>
 <p>La propia GEA, en la documentación de esta máquina, ofrece su sistema de monitorización de estado wewatch® para el mantenimiento predictivo: recogida continua de datos de los parámetros clave de la máquina y un plan de mantenimiento según el estado (p. 64). Hoy la web de GEA presenta InsightPartner Separation Monitoring para separadoras y decantadores. Se montan en la máquina dos o tres sensores adicionales que miden velocidad y aceleración de vibración en distintos puntos y, como dice GEA, solo miden y no apagan la centrífuga. Los datos van a la nube de GEA o al panel de la máquina: tendencias, detección de anomalías, diagnóstico y soporte remoto de expertos de GEA.</p>
 <p>ANDRITZ describe su sensor VibePro como uno que combina la vibración con datos de proceso, con análisis espectral (FFT) y bibliotecas de fallos. El análisis espectral por sí solo es un método clásico de diagnóstico de vibraciones: descompone la vibración por frecuencias y no necesita aprendizaje automático. Alfa Laval vende ConditionAlert para decantadores: los datos de vibración se analizan a distancia y las anomalías se comunican dentro de un contrato de servicio.</p>
-<p>Ninguna de estas páginas dice que dentro haya aprendizaje automático. Los tres fabricantes venden lo mismo: más sensores, más de un número, historial de datos y personas que lo leen.</p>
+<p>Ninguna de estas páginas dice que dentro haya aprendizaje automático. Los tres se basan en lo mismo: más sensores, más de un número, historial de datos y personas que lo leen.</p>
 <p>No he usado estos sistemas en un decantador, así que no puedo decir cuánto aportan sobre la protección de serie. Si le ofrecen uno para su planta, yo preguntaría al proveedor sin rodeos: qué señales usa además de la vibración global, si puede distinguir depósitos de daños en rodamientos antes de abrir la máquina y en cuántas máquinas comparables se ha demostrado.</p>
 <h2 id="antes-de-comprar-ia-revise-la-documentación-de-su-máquina">Antes de comprar IA, revise la documentación de su máquina</h2>
 <ul>
