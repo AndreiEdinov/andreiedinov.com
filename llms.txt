@@ -1,0 +1,38 @@
+# Andrei Edinov · Expert Water Process Engineer
+
+> Design and commissioning of water and wastewater treatment systems for industry. From water analysis to commissioning: process water treatment and industrial wastewater, end to end. Chemical technology background, on industrial sites since 2020.
+
+Site languages: English (default), Russian (/ru/), Spanish (/es/). Contact: andrei@andreiedinov.com · LinkedIn: https://www.linkedin.com/in/andreiedinov/
+
+## Cases
+
+Projects told in one order: input data, engineering challenge, solution, measured result.
+
+- [Gas chlorination for the upgrade of two drinking water plants](https://andreiedinov.com/portfolio/gas-chlorination-dwtp/): design of a gas chlorination system for plants built in the 1970s–80s, treating 400,000 and 550,000 m³/day.
+- [Modular UV sterilisation unit for process water, 2,500 L/h](https://andreiedinov.com/portfolio/uv-process-water/): modular unit for a food plant, assembled and tested at the factory.
+- [Modular wastewater treatment for a pharmaceutical plant](https://andreiedinov.com/portfolio/pharma-modular-wwtp/): 50 m³/day module, factory-tested; 3 working days to install, 2 to commission.
+- [Wastewater treatment plant for a paper mill, 2,160 m³/day](https://andreiedinov.com/portfolio/paper-mill-wwtp/): installation supervision and commissioning — screening, chemical DAF, biological treatment, sludge dewatering.
+- [GEA decanter repair](https://andreiedinov.com/portfolio/decanter-service/): GEA waterMaster CF 4000 at a food plant wastewater facility; vibration from 18–20 to 6–7 mm/s.
+- [Flocculant preparation units, 3×3,000 L/h, pulp and paper mill](https://andreiedinov.com/portfolio/flocculant-pulp-paper/): installation supervision and commissioning.
+- [Flocculant preparation unit, 3,000 L/h, coal preparation plant](https://andreiedinov.com/portfolio/flocculant-coal-prep/): installation supervision and commissioning, 5 working days.
+
+## Blog
+
+Engineering notes on water treatment design and operation: incidents, calculations and the details that decide how a plant runs.
+
+- [AI or a PLC? What a GEA decanter already has, and what vendors call predictive maintenance](https://andreiedinov.com/blog/decanter-ai-or-plc/) (2026-11-19)
+- [Operator error that starts on the drawings: chemical unloading at water plants](https://andreiedinov.com/blog/chemical-unloading-design/) (2026-11-16)
+
+## Calculators
+
+Free tools for engineers and plant owners. Each one shows its formula, source and limits; results are estimates for engineering checks, not a design.
+
+- [Chlorine dose](https://andreiedinov.com/calculators/chlorine-dose/)
+- [Langelier Saturation Index (LSI)](https://andreiedinov.com/calculators/lsi/)
+- [RO flux and recovery](https://andreiedinov.com/calculators/ro-flux-recovery/)
+
+## Optional
+
+- [Russian version](https://andreiedinov.com/ru/)
+- [Spanish version](https://andreiedinov.com/es/)
+- [Sitemap](https://andreiedinov.com/sitemap.xml)
